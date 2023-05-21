@@ -1,0 +1,91 @@
+/* Styles for the navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Styles for the logo */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  /* Styles for the contact and about sections */
+  .contact-section,
+  .about-section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .contact-section h2,
+  .about-section h2 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .contact-section p,
+  .about-section p {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  /* Styles for the body section with animation */
+  .body-section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .body-section h2 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .body-section p {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  /* Animation */
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animation {
+    animation: slide-in 1s ease-in-out;
+  }
+  
